@@ -11,7 +11,9 @@
 	--social-hover: #404bbf;
 	--transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-*,*::after,*::before{
+*,
+*::after,
+*::before {
 	-webkit-tap-highlight-color: transparent;
 }
 p,
@@ -46,7 +48,7 @@ body {
 	color: var(--text-color);
 	font-size: 16px;
 }
-.no-scroll{
+.no-scroll {
 	overflow: hidden;
 }
 
@@ -229,12 +231,11 @@ span {
 	background-position: center;
 	background-size: cover;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../img/hero/people-office-2x.jpg');
-  }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../img/hero/people-office-2x.jpg");
+	}
 }
 
 .hero-container {
@@ -481,7 +482,6 @@ span {
 /* -------FOOTER------- */
 
 .footer {
-	
 	background-color: var(--dark);
 }
 
@@ -597,6 +597,10 @@ span {
 	width: 24px;
 	height: 24px;
 	background-image: url(../img/form/button-footer.svg);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+	background-color: var(--social-hover);
 }
 @media screen and (min-width: 1158px) {
 	.footer-container {
@@ -889,18 +893,18 @@ span {
 
 .portfolio-list-text {
 }
- @media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
 	.portfolio {
 		padding-top: 96px;
 		padding-bottom: 120px;
 	}
-	.portfolio-menu{
+	.portfolio-menu {
 		margin-bottom: 72px;
 	}
-	.portfolio-list{
+	.portfolio-list {
 		gap: 48px 24px;
 	}
-	.portfolio-list-item{
+	.portfolio-list-item {
 		width: auto;
 	}
- }
+}
